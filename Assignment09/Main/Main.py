@@ -9,23 +9,23 @@ Citations:
 Anything else that's relevant:
 '''
 
-from LaptopsPackage import *
+from LaptopsPackage.LenovoClass import *
 
-laptop = Laptops('Silver', 825) #i don't know why it doesn't like this!!!
+laptop = Lenovo('Silver', 825) #this wont work needs fixed
 
 laptop.setPrice(-1000)
 laptop.setPrice(800) #non-dunder example
-laptop.setprice(950)
+laptop.setPrice(950)
 laptop.setPrice(1200)
 
 laptop.setPrice(975) #non-dunder example
 print(laptop.__str__()) #dunder example
-laptop.checkcolor("White")
+laptop.setcolor("White")
 print(laptop.__str__()) #dunder example
 
-myLaptops = [laptop('Black', 875), # these are the actual peak heights of these mountains
-              laptop('Pink', 1050),
-              laptop('Blue', 1500)]
+myLaptops = [Lenovo('Black', 875),
+             Lenovo('Pink', 1050),
+              Lenovo('Blue', 1500)]
 
 # traverse the list and print the data
 for laptop in myLaptops:
