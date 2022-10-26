@@ -30,3 +30,12 @@ myLaptops = [Lenovo('Black', 875),
 # traverse the list and print the data
 for laptop in myLaptops:
     print(laptop.__repr__())
+    
+from LaptopsPackage.MacBookClass import *
+
+laptop2 = MacBook('Black', 1000)
+
+print(laptop2.__str__())
+print(laptop2.__repr__())
+print(laptop2.availability(3))
+print(laptop2.availability(0))
