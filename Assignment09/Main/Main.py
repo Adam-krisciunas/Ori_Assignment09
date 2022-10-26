@@ -29,27 +29,3 @@ myLaptops = [Lenovo('Black', 875),
              Lenovo('Pink', 1050),
               Lenovo('Blue', 1500)]
 
-# traverse the list and print the data
-for lDellLaptop in myLaptops:
-    print(lDellLaptop.__repr__())
-
-DellLaptop = Dell('Silver', 825) #this wont work needs fixed
-
-DellLaptop.setPrice(-1)
-DellLaptop.setPrice(999)
-DellLaptop.setPrice(750)
-DellLaptop.setPrice(1050)
-
-DellLaptop.setPrice(900) 
-print(DellLaptop.__str__()) 
-DellLaptop.setcolor("White")
-print(DellLaptop.__str__()) 
-
-#More lists
-myLaptops = [Dell('Black', 999),
-             Dell('Pink', 10),
-             Dell('Blue', 2)]
-
-
-for lDellLaptop in myLaptops:
-    print(lDellLaptop.__repr__())
