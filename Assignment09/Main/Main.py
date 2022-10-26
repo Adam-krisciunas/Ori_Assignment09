@@ -10,23 +10,46 @@ Anything else that's relevant:
 '''
 
 from LaptopsPackage.LenovoClass import *
+from LaptopsPackage.DellClass import *
+from Laptops import *
 
-laptop = Lenovo('Silver', 825) #this wont work needs fixed
+lenovoLaptop = Lenovo('Silver', 825) #this wont work needs fixed
 
-laptop.setPrice(-1000)
-laptop.setPrice(800) #non-dunder example
-laptop.setPrice(950)
-laptop.setPrice(1200)
+lenovoLaptop.setPrice(-1000)
+lenovoLaptop.setPrice(800) #non-dunder example
+lenovoLaptop.setPrice(950)
+lenovoLaptop.setPrice(1200)
 
-laptop.setPrice(975) #non-dunder example
-print(laptop.__str__()) #dunder example
-laptop.setcolor("White")
-print(laptop.__str__()) #dunder example
+lenovoLaptop.setPrice(975) #non-dunder example
+print(lenovoLaptop.__str__()) #dunder example
+lenovoLaptop.setcolor("White")
+print(lenovoLaptop.__str__()) #dunder example
 
 myLaptops = [Lenovo('Black', 875),
              Lenovo('Pink', 1050),
               Lenovo('Blue', 1500)]
 
 # traverse the list and print the data
-for laptop in myLaptops:
-    print(laptop.__repr__())
+for lDellLaptop in myLaptops:
+    print(lDellLaptop.__repr__())
+
+DellLaptop = Dell('Silver', 825) #this wont work needs fixed
+
+DellLaptop.setPrice(-1)
+DellLaptop.setPrice(999)
+DellLaptop.setPrice(750)
+DellLaptop.setPrice(1050)
+
+DellLaptop.setPrice(900) 
+print(DellLaptop.__str__()) 
+DellLaptop.setcolor("White")
+print(DellLaptop.__str__()) 
+
+#More lists
+myLaptops = [Dell('Black', 999),
+             Dell('Pink', 10),
+             Dell('Blue', 2)]
+
+
+for lDellLaptop in myLaptops:
+    print(lDellLaptop.__repr__())
