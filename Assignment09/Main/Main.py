@@ -23,7 +23,7 @@ print(laptop.__str__()) #dunder example
 laptop.checkcolor("White")
 print(laptop.__str__()) #dunder example
 
-myLaptops = [laptop('Black', 875), # these are the actual peak heights of these mountains
+myLaptops = [laptop('Black', 875),
               laptop('Pink', 1050),
               laptop('Blue', 1500)]
 

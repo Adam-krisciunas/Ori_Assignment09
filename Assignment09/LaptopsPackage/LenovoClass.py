@@ -15,14 +15,23 @@ class Lenovo():
             print("The price of a Lenovo Laptop cannot be negative")
         else:
             self.price = price;
-   
-    def checkcolor(self, color):
+            
+    def getPrice(self,price):
+        return self.getPrice
+    
+    def setcolor(self, color):
         self.color = color
         
+    def getcolor(self,color):
+        return self.getcolor
+        
     def Lenovo_sell(self, sell):
-        self.sell = sell
+        if sell < 800:
+            print("The Laptop sold at a good price")
+        else:
+            self.sell = sell;
        
-    def  __init__ (self, color, price ): # self means current object
+    def  __init__ (self, color, price ): 
         self.color = color;
         self.price = price;
        
