@@ -11,7 +11,7 @@ Anything else that's relevant:
 
 from LaptopsPackage import *
 
-laptop = Laptops('Silver', 825) #i don't know why it doesn't like this!!!
+laptop = Laptops('Silver', 825) #this wont work needs fixed
 
 laptop.setPrice(-1000)
 laptop.setPrice(800) #non-dunder example
