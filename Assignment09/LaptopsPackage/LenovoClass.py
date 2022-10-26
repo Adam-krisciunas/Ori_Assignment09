@@ -30,7 +30,7 @@ class Lenovo():
             print("The Laptop sold at a good price")
         else:
             self.sell = sell;
-       
+            
     def  __init__ (self, color, price ): 
         self.color = color;
         self.price = price;
