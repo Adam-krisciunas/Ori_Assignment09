@@ -16,8 +16,14 @@ class MacBook():
         else:
             self.price = price;
    
-    def checkcolor(self, color):
-        self.color = color
+    def checkcolor(self):
+        return self.color
+        
+    def getPrice(self):
+        return "the price of the macbook is " + str(self.price)
+    
+    def getcolor(self, color):
+        return self.getcolor
        
     def  __init__ (self, color, price ): # self means current object
         self.color = color;
@@ -30,6 +36,6 @@ class MacBook():
         return "color = " + self.color + ",  price = " + str(self.price)
     def availability(self,availability):
         if availability > 0:
-            print("the laptop is in stock")
+            print("the macbook is in stock")
         else:
             print("out of stock")    

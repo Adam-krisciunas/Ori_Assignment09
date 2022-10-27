@@ -15,17 +15,17 @@ class Dell():
         else:
             self.price = price;
             
-    def getPrice(self,price):
-        return self.getPrice
+    def getPrice(self):
+        return "the price of the dell laptop is " + str(self.price)
     
     def getcolor(self,color):
         return self.getcolor
         
-    def Lenovo_sell(self, sell):
-        if sell < 800:
-            print("The Laptop sold at a good price")
+    def Dell_sell(self):
+        if self.price < 800:
+            print("The dell  Laptop sold at a good price")
         else:
-            self.sell = sell;
+            print("the dell laptop was sold for a high price");
             
     def  __init__ (self, color, price): 
         self.color = color;
