@@ -12,6 +12,14 @@ Anything else that's relevant:
 from LaptopsPackage.LenovoClass import *
 from LaptopsPackage.DellClass import *
 from Laptops import *
+from LaptopsPackage.MacBookClass import *
+
+laptop2 = MacBook('Black', 1000)
+
+print(laptop2.__str__())
+print(laptop2.__repr__())
+print(laptop2.availability(3))
+print(laptop2.availability(0))
 
 lenovoLaptop = Lenovo('Silver', 825) #this wont work needs fixed
 
@@ -29,3 +37,38 @@ myLaptops = [Lenovo('Black', 875),
              Lenovo('Pink', 1050),
               Lenovo('Blue', 1500)]
 
+for laptop in myLaptops:
+    print(laptop.__repr__())
+    
+from LaptopsPackage.MacBookClass import *
+
+laptop2 = MacBook('Black', 1000)
+
+print(laptop2.__str__())
+print(laptop2.__repr__())
+print(laptop2.availability(3))
+print(laptop2.availability(0))
+
+for DellLaptop in myLaptops:
+    print(DellLaptop.__repr__())
+
+DellLaptop = Dell('Silver', 825) #this wont work needs fixed
+
+DellLaptop.setPrice(-1)
+DellLaptop.setPrice(999)
+DellLaptop.setPrice(750)
+DellLaptop.setPrice(1050)
+
+DellLaptop.setPrice(900) 
+print(DellLaptop.__str__()) 
+
+#More lists
+myLaptops = [Dell('Black', 999),
+             Dell('Pink', 10),
+             Dell('Blue', 2)]
+
+
+for lDellLaptop in myLaptops:
+    print(lDellLaptop.__repr__())
+    
+    

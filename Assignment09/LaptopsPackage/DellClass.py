@@ -18,9 +18,6 @@ class Dell():
     def getPrice(self,price):
         return self.getPrice
     
-    def setcolor(self, color):
-        self.color = color
-        
     def getcolor(self,color):
         return self.getcolor
         
@@ -30,7 +27,7 @@ class Dell():
         else:
             self.sell = sell;
             
-    def  __init__ (self, color, price ): 
+    def  __init__ (self, color, price): 
         self.color = color;
         self.price = price;
        
